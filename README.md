@@ -1,54 +1,67 @@
-![Gabriel Villenet — Desarrollo de software, IoT y robótica](assets/portfolio-header.svg)
+<h1 align="center">Gabriel Villenet</h1>
 
-# Hola, soy Gabriel Villenet
+<p align="center">
+  <strong>Desarrollo de software · IoT · Robótica · Visión artificial</strong>
+</p>
 
-Desarrollo aplicaciones y sistemas que conectan **software, datos y hardware**. Trabajo en proyectos de IoT, robótica y visión artificial, y preparo herramientas educativas para aprender construyendo.
+<p align="center">
+  Construyo aplicaciones y sistemas que conectan datos con el mundo físico.<br>
+  También desarrollo herramientas educativas para aprender construyendo.
+</p>
 
-Este portafolio reúne una selección de mi trabajo. Cada proyecto documenta su alcance, cómo ejecutarlo y qué falta validar.
+---
 
-## Proyectos destacados
+## Proyectos seleccionados
 
-### 01 · EcoSphere
-**Microclima inteligente · IoT y aplicaciones multiplataforma**
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Supervisión de sensores y control de riego, ventilación e iluminación mediante un ESP32. El repositorio reúne clientes para Android, escritorio y web, con telemetría, historial y autenticación.
+<h3>01 · EcoSphere</h3>
+<p><strong>Microclima inteligente</strong></p>
+<p>Sensores, historial y control de riego, ventilación e iluminación. Aplicaciones para móvil, escritorio y web conectadas a un ESP32.</p>
+<p><code>Kotlin</code> <code>Compose</code> <code>ESP32</code> <code>Supabase</code></p>
+<p><strong>En desarrollo</strong><br>Requiere configurar el backend y conectar el hardware.</p>
+<p><a href="https://github.com/VillenetMK/EcoSphere"><strong>Ver proyecto →</strong></a></p>
 
-**Tecnologías:** Kotlin · Compose · JavaScript · ESP32 · Supabase  
-**Estado:** en desarrollo; la operación completa requiere configurar el backend y conectar el hardware.
+</td>
+<td width="50%" valign="top">
 
-[Explorar proyecto](https://github.com/VillenetMK/EcoSphere) · [Arquitectura](https://github.com/VillenetMK/EcoSphere/blob/main/docs/PLATFORM_UI_ARCHITECTURE.md)
+<h3>02 · MuniGest</h3>
+<p><strong>Gestión de expedientes</strong></p>
+<p>Solicitudes, derivaciones e historial por áreas. Incluye roles, adjuntos, reportes y una demostración local con datos ficticios.</p>
+<p><code>Python</code> <code>Flet</code> <code>PostgreSQL</code> <code>Supabase</code></p>
+<p><strong>Piloto 0.1</strong><br>Validación municipal y despliegue pendientes.</p>
+<p><a href="https://github.com/VillenetMK/sistema-municipal"><strong>Ver proyecto →</strong></a></p>
 
-### 02 · MuniGest Chiclayo
-**Gestión de expedientes · Aplicación en Python**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Piloto para registrar solicitudes, derivarlas entre áreas y consultar su historial. Incluye roles, adjuntos, reportes y una demostración local con datos ficticios.
+<h3>03 · Movilidad robótica</h3>
+<p><strong>Odometría y sensores</strong></p>
+<p>Estimación del movimiento desde pulsos de ruedas, con publicación de posición, transformaciones y diagnóstico en ROS 2.</p>
+<p><code>Python</code> <code>ROS 2</code> <code>Jetson</code> <code>LiDAR</code></p>
+<p><strong>En desarrollo</strong><br>Validación física y calibración pendientes.</p>
+<p><a href="https://github.com/VillenetMK/robot-mobility-ros2-jetson"><strong>Ver proyecto →</strong></a></p>
 
-**Tecnologías:** Python · Flet · Supabase · PostgreSQL  
-**Estado:** piloto 0.1; validación municipal, despliegue y empaquetado pendientes. No representa un sistema municipal oficialmente implementado.
+</td>
+<td width="50%" valign="top">
 
-[Explorar proyecto y demo local](https://github.com/VillenetMK/sistema-municipal) · [Alcance](https://github.com/VillenetMK/sistema-municipal/blob/main/docs/ALCANCE.md)
+<h3>04 · Visión por webcam</h3>
+<p><strong>Aprendizaje con visión artificial</strong></p>
+<p>Detección local de objetos y rostros, con etiquetas en español y una interfaz que distingue resultados mediante formas.</p>
+<p><code>Python</code> <code>OpenCV</code> <code>YOLO11n</code></p>
+<p><strong>Herramienta educativa</strong><br>Detecta rostros; no identifica personas por nombre.</p>
+<p><a href="https://github.com/VillenetMK/reconocimiento_webcam"><strong>Ver proyecto →</strong></a></p>
 
-### 03 · Movilidad robótica
-**ROS 2 y Jetson · Odometría y sensores**
+</td>
+</tr>
+</table>
 
-Desarrollo de una base para integrar LiDAR e IMU y estimar el movimiento del robot desde pulsos medidos de sus ruedas. Incluye publicación de odometría, transformaciones y diagnóstico.
-
-**Tecnologías:** Python · ROS 2 Humble · NVIDIA Jetson · LiDAR · IMU  
-**Estado:** odometría implementada; validación en Jetson, conexión física y calibración pendientes. La navegación autónoma es una fase posterior.
-
-[Explorar proyecto](https://github.com/VillenetMK/robot-mobility-ros2-jetson) · [Guía de odometría](https://github.com/VillenetMK/robot-mobility-ros2-jetson/blob/main/docs/ODOMETRIA.md)
-
-### 04 · Reconocimiento por webcam
-**Visión artificial · Herramienta educativa**
-
-Detección local de objetos y rostros con etiquetas en español. La interfaz utiliza alto contraste y formas diferentes para distinguir resultados.
-
-**Tecnologías:** Python · OpenCV · Ultralytics YOLO11n  
-**Alcance:** categorías COCO y detección frontal de rostros; no identifica personas por nombre ni guarda fotos o videos.
-
-[Explorar proyecto y ejecutarlo](https://github.com/VillenetMK/reconocimiento_webcam)
-
-## Tecnologías en estos proyectos
+<details>
+<summary><strong>Herramientas y tecnologías</strong></summary>
 
 | Área | Herramientas |
 |---|---|
@@ -56,12 +69,23 @@ Detección local de objetos y rostros con etiquetas en español. La interfaz uti
 | Datos y servicios | PostgreSQL, Supabase e integración de APIs |
 | IoT y robótica | ESP32, C++/Arduino, ROS 2, Jetson y comunicación serial |
 | Visión artificial | OpenCV y YOLO |
-| Desarrollo | Git, GitHub Actions, pruebas automatizadas y documentación |
+| Desarrollo | Git, GitHub Actions, pruebas y documentación |
 
-## Más trabajo en robótica
+</details>
 
-[MAXCIM · Control de brazos v8](https://github.com/VillenetMK/BRAZOS_MAXICM_v8): panel web, secuencias de movimiento y comunicación entre ROS 2, ESP32 y PCA9685. Su README enlaza las otras revisiones para facilitar la comparación.
+<details>
+<summary><strong>Más robótica y documentación técnica</strong></summary>
+
+- [MAXCIM · Control de brazos v8](https://github.com/VillenetMK/BRAZOS_MAXICM_v8): panel web, secuencias de movimiento y comunicación con ESP32 y PCA9685.
+- [Arquitectura de EcoSphere](https://github.com/VillenetMK/EcoSphere/blob/main/docs/PLATFORM_UI_ARCHITECTURE.md).
+- [Alcance de MuniGest](https://github.com/VillenetMK/sistema-municipal/blob/main/docs/ALCANCE.md): piloto orientado a Chiclayo, pendiente de validación institucional.
+- [Guía de odometría](https://github.com/VillenetMK/robot-mobility-ros2-jetson/blob/main/docs/ODOMETRIA.md): la navegación autónoma corresponde a una fase posterior.
+
+</details>
 
 ---
 
-**Para conocer un proyecto:** empieza por su README, revisa el alcance y sigue la guía de ejecución. Los repositorios distinguen las funciones implementadas de las integraciones y pruebas pendientes.
+<p align="center">
+  <strong>Software que interactúa con el mundo real.</strong><br>
+  <a href="https://github.com/VillenetMK?tab=repositories">Explorar todos los repositorios →</a>
+</p>
